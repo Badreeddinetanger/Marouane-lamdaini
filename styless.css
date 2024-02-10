@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Style de base de la navbar */
+.navbar {
+    display: flex;
+    background-color: #333;
+    padding: 0 315px;
+    list-style-type: none; /* Supprime les points */
+    /* Rendre la navbar collante */
+    position: sticky;
+    top: 0;
+    width: 50%;
+    z-index: 1000; /* Assurez-vous que la navbar reste au-dessus de tout le contenu */
+}
+.navbar h1{
+    color:#ddd
+}
+.navbar h1::first-letter{
+     font-size: 60px;
+}
+.navbar h1:hover{
+    color: rgb(36, 33, 33);
+}
+.content1{
+    display: flex;
+    justify-content: space-between;
+    padding:50px 40px;
+    background-color: #ddd;
+}
+.content1 p{
+    margin-top: 50px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.content1 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#ligne-separation{
+    border-bottom: 2px solid gray;
+}
+/*vidio*/
+.vidio{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.vidio h4{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+iframe{
+    border-radius: 5px;
+}
+/* les lien des page pdf*/
+.link{
+    background-color: #ddd;
+}
+.link h4 ,p{
+    text-align: center; /* Centre le texte */
+    padding: 15px;
+    font-size: 20px;
+}
+.pdf{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10px;
+}
+/*le footer style*/
+footer{
+    background-color: #333;
+    padding: 10px 315px;
+    width: 50%;
+    color: white;
+    text-align: center; /* Centrer horizontalement le contenu du footer */
+    margin: 0 auto; /* Centrer le footer horizontalement */
+}
+footer p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.reseaux-sociaux img {
+    border-radius: 5px;
+    margin: 5px 10px;
+    width: 40px;
+    height: 40px;
+}
+/*pour le rejouinez nous*/
+.line-centered {
+    text-align: center; /* Centre le texte */
+    margin-bottom: 10px;
+}
+
+.text {
+    
+    display: inline-block; /* Permet à la div d'entourer le texte */
+    padding: 0 10px; /* Ajoute de l'espace entre le texte et la ligne */
+    border-bottom: 1px solid white; /* Crée une ligne en dessous du texte */
+}
+
+/* Pour les écrans de petite taille (smartphones) */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+    .navbar h1 {
+        font-size: 24px;
+    }
+    .content1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .content1 img {
+        width: 100%;
+        height: auto;
+    }
+    .content1 p {
+        font-size: 14px;
+    }
+    .vidio {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .pdf {
+        flex-direction: column;
+        align-items: center;
+    }
+    .vidio iframe {
+        width: 100%; /* Réglez la largeur de l'iframe à 100% */
+        height: auto; /* Ajustez automatiquement la hauteur pour maintenir le rapport hauteur-largeur */
+    }
+}
+
+/* Pour les écrans de taille moyenne (tablettes) */
+@media only screen and (max-width: 1024px) {
+    /* Ajoutez ici les règles spécifiques aux tablettes si nécessaire */
+}
+
+/* Pour les écrans de grande taille (ordinateurs de bureau) */
+@media only screen and (min-width: 1200px) {
+    /* Ajoutez ici les règles spécifiques aux ordinateurs de bureau si nécessaire */
+}
+/* Pour les écrans de petite taille (smartphones) */
+@media only screen and (max-width: 768px) {
+    footer {
+        padding: 10px;
+    }
+}
