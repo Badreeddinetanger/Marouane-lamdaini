@@ -10,7 +10,7 @@
     padding: 0 315px;
     list-style-type: none; /* Supprime les points */
     /* Rendre la navbar collante */
-    position: sticky;
+    
     top: 0;
     width: 50%;
     z-index: 1000; /* Assurez-vous que la navbar reste au-dessus de tout le contenu */
@@ -70,6 +70,9 @@ iframe{
     display: flex;
     justify-content: space-between;
     padding: 40px 10px;
+}
+.img-claire {
+    filter: brightness(150%);
 }
 /*le footer style*/
 footer{
